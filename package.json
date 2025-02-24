@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "build-gitpages": "ng build --output-path docs --base-href /tea-store/",
     "test": "ng test"
   },
   "private": true,
