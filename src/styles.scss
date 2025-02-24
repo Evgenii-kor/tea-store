@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.one-time-block {
+  max-width: 100%;
+}
+
+.one-time-block img {
+  max-width: 100%;
+}
+
+.accordion-item {
+  margin-bottom: 16px !important;
+  border: none !important;
+}
+.accordion-button {
+  background-color: #007bff !important;
+  color: white !important;
+  border-radius: 8px !important;
+}
+h3 {
+  font-size: 16px !important;
+  font-weight: bold !important;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+}
+.accordion-button:focus,
+.accordion-button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

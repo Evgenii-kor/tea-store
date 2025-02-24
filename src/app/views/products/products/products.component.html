@@ -1,0 +1,11 @@
+<div class="container pt-4 ">
+  <div class="cards pb-5" id="products">
+    <h1 class="cards-title text-center mb-5 fw-bold">Наши чайные коллекции</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+      <app-product-card *ngFor="let product of products" [product]="product"></app-product-card>
+    </div>
+    <div *ngIf="loading" class="loader-bg">
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,112 @@
+<div class="container pt-4 flex-grow-1">
+
+  <div class="one-time pb-5">
+    <div class="one-time-block">
+      <img src="assets/images/image01.png" alt="image01">
+    </div>
+  </div>
+
+
+  <div class="accordion-section mt-4 mb-5">
+    <h2 class="accordion-title text-center fw-bold mb-5">Ответы на часто задаваемые вопросы</h2>
+
+    <div class="accordion mx-auto col-lg-8">
+      <ngb-accordion #acc="ngbAccordion">
+
+        ///1 panel
+        <ngb-panel id="ngb-panel-0">
+          <ng-template ngbPanelTitle>
+            <div class="accordion-title-h3">
+              <h3 class="m-0">
+                Собираете ли вы подарочные боксы?
+              </h3>
+            </div>
+          </ng-template>
+          <ng-template ngbPanelContent>
+              <p class="accordion-text m-0">Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус,
+                объем и стоимость!</p>
+          </ng-template>
+        </ngb-panel>
+
+        ///2 panel
+        <ngb-panel id="ngb-panel-1">
+          <ng-template ngbPanelTitle>
+            <div class="accordion-title-h3">
+              <h3 class="m-0">
+                Сколько у вас разновидностей чая?
+              </h3>
+            </div>
+          </ng-template>
+          <ng-template ngbPanelContent>
+              <p class="accordion-text m-0">В данный момент у нас в наличии более 20 разновидностей чая.</p>
+          </ng-template>
+        </ngb-panel>
+
+        ///3 panel
+        <ngb-panel id="ngb-panel-2">
+          <ng-template ngbPanelTitle>
+            <div class="accordion-title-h3">
+              <h3 class="m-0">
+                В какой срок осуществляется доставка?
+              </h3>
+            </div>
+          </ng-template>
+          <ng-template ngbPanelContent>
+              <p class="accordion-text m-0">Доставка осуществляется от 1 до 3 рабочих дней. Также вы можете заказать
+                экспресс-доставку, курьер привезет заказ в течение нескольких часов.</p>
+          </ng-template>
+        </ngb-panel>
+
+        ///4 panel
+        <ngb-panel id="ngb-panel-3">
+          <ng-template ngbPanelTitle>
+            <div class="accordion-title-h3">
+              <h3 class="m-0">
+                У вас обновляется ассортимент?
+              </h3>
+            </div>
+          </ng-template>
+          <ng-template ngbPanelContent>
+              <p class="accordion-text m-0">Да. У нас регулярно обновляется ассортимент. Вы можете отслеживать
+                ассортимент на нашем сайте.</p>
+          </ng-template>
+        </ngb-panel>
+
+        ///5 panel
+        <ngb-panel id="ngb-panel-4">
+          <ng-template ngbPanelTitle>
+            <div class="accordion-title-h3">
+              <h3 class="m-0">
+                Какого объема у вас пачки чая?
+              </h3>
+            </div>
+          </ng-template>
+          <ng-template ngbPanelContent>
+              <p class="accordion-text m-0">Наша продукция отпускается в пачках от 50 грамм до 1 килограмма.</p>
+          </ng-template>
+        </ngb-panel>
+
+
+      </ngb-accordion>
+    </div>
+
+
+    <ng-template #popup let-modal>
+      <div class="">
+        <div class="modal-content">
+          <div class="py-3 text-end px-2">
+            <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+          </div>
+          <div class="modal-body text-center fw-bolder fs-5">
+            Посмотрите наши чайные коллекции
+          </div>
+          <div class="text-center py-4">
+            <a [routerLink]="'/products'" routerLinkActive="active" class="btn btn-primary w-50 hvr-grow">Смотреть</a>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+
+
+</div>

@@ -1,0 +1,11 @@
+  <div class="card h-100">
+    <a href="{{product.image}}" class="test-popup-link">
+      <img src="{{product.image}}" class="card-img-top" alt="image01">
+    </a>
+    <div class="card-body d-flex flex-column">
+      <h4 class="card-title fw-bold text-center">{{product.title}}</h4>
+      <p class="card-text fw-normal mb-4 flex-grow-1">{{product.description | shortDescription}}</p>
+      <a [routerLink]="['/products', product.id]" class="btn btn-primary btn-lg py-2 px-4 fs-6 hvr-grow mt-auto">Подробнее</a>
+    </div>
+  </div>
+
